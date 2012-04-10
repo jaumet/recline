@@ -68,8 +68,21 @@ function standardViews(dataset) {
       view: new recline.View.Map({
         model: dataset
       })
+    },
+    {
+      id: 'jaume',
+      label: 'Jaume',
+      view: new recline.View.Jaume({
+        model: dataset
+      })
+    },
+    {
+      id: 'report',
+      label: 'Report',
+      view: new recline.View.Report({
+        model: dataset
+      })
     }
-
   ];
   return views;
 }
